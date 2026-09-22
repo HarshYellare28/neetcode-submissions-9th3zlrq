@@ -1,0 +1,19 @@
+# Find Median from Data Stream
+# https://leetcode.com/problems/find-median-from-data-stream/
+
+# Example (LeetCode):
+# ["MedianFinder","addNum","addNum","findMedian","addNum","findMedian"]
+# [[],[1],[2],[],[3],[]]
+# Output: [null,null,null,1.5,null,2.0]
+
+# Custom test: stream 2, 3, 4, 1, 8, 5 with findMedian at mixed points
+# After 2,3 (even) -> 2.5
+# After 2,3,4 (odd) -> 3.0
+# After 2,3,4,1,8 (odd) -> 3.0
+# After 2,3,4,1,8,5 (even) -> 3.5
+
+["MedianFinder","addNum","addNum","findMedian","addNum","findMedian","addNum","addNum","findMedian","addNum","findMedian"]
+[[],[2],[3],[],[4],[],[1],[8],[],[5],[]]
+
+Expected:
+[null,null,null,2.5,null,3.0,null,null,3.0,null,3.5]
